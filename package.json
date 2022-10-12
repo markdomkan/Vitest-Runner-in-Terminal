@@ -1,12 +1,12 @@
 {
-  "name": "vscode-vitest-runner",
-  "displayName": "Vitest Runner",
-  "version": "0.0.4",
+  "name": "vitest-runner-in-terminal",
+  "displayName": "Vitest Runner in Terminal",
+  "version": "1.0.0",
   "main": "dist/index.js",
   "icon": "logo.png",
   "license": "MIT",
-  "description": "Vitest case runner.",
-  "publisher": "kingwl",
+  "description": "Vitest case runner in terminal.",
+  "publisher": "Mark Domkan",
   "engines": {
     "vscode": "^1.65.0"
   },
@@ -19,8 +19,8 @@
     "runner",
     "codelens"
   ],
-  "repository": "git@github.com:kwai-explore/vscode-vitest-runner.git",
-  "author": "kingwl <kingwenlu@gmail.com>",
+  "repository": "git@github.com:markdomkan/Vitest-Runner-in-Terminal.git",
+  "author": "Mark Domkan",
   "activationEvents": [
     "onLanguage:typescript",
     "onLanguage:javascript",
@@ -28,6 +28,7 @@
     "onLanguage:javascriptreact"
   ],
   "devDependencies": {
+    "@types/node": "^18.8.4",
     "@types/vscode": "^1.65.0",
     "esbuild": "^0.14.27",
     "prettier": "^2.6.0",
@@ -38,7 +39,7 @@
   "scripts": {
     "build": "node ./scripts/build.js",
     "package": "yarn build && yarn vsce package",
-    "format:check": "prettier --config ./prettier.config.json --c ./src/**/*.ts",
+    "format:check": "prettier --c ./src/**/*.ts",
     "format:write": "yarn format:check --write"
   }
 }

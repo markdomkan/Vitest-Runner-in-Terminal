@@ -1,5 +1,5 @@
 # vscode-vitest-runner
 
-Run your test case by vitest.
+Run your test case by vitest in your active terminal or debug it.
 
-![preview](https://github.com/kwai-explore/vscode-vitest-runner/blob/main/docs/preview.png?raw=true)
+_Based on [kingwl's extension](https://github.com/kwai-explore/vscode-vitest-runner)._
